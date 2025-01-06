@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+       <div class="container">
+            <div class="nav-con">
+                <div class="logo"><a href="#">Mind Ease</a></div>
+                <ul class="menu">
+                    <li><a href="">หน้าหลัก</a></li>
+                    <li><a href="">เกี่ยวกับเรา</a></li>
+
+                </ul>
+            </div>
+       </div>
+   </nav> 
+
+   <section class="maincontent">
+  <div class="container">
+    <div class="maincontent-con">
+      <div class="maincontent-info">
+        <h3>วันนี้คุณรู้สึกอย่างไร?</h3>
+        <p>เหนื่อยเมื่อไหร่ก็แวะมา. . . ระบายความเหนื่อยกับพวกเราได้นะะะ </p>
+        <a href="" class="maincontent-btn">กาซิบว่ามีบทความมาฮีลใจด้วยแหละะ</a>
+      </div>
+
+      <div class="maincontent-ing">
+        <img src="https://s.isanook.com/mv/0/ud/10/51953/in.jpg" alt="">
+      </div>
+    </div>
+  </div>
+   </section>
+   </body>
+   </html>
+
+   <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ฟอร์มความรู้สึก</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ส่วนแสดงความรู้สึก -->
+  <section class="maincontent">
+    <div class="container maincontent-con">
+      <div class="maincontent-info">
+        <h3>วันนี้คุณรู้สึกอย่างไร?</h3>
+        <p>โปรดเลือกความรู้สึกของคุณ</p>
+
+        <!-- ฟอร์มเลือกความรู้สึก -->
+        <form id="moodForm">
+          <div class="mood-options">
+            <label>
+              <input type="radio" name="mood" value="มีความสุขมาก"> มีความสุขมาก
+            </label>
+            <label>
+              <input type="radio" name="mood" value="แย่"> แย่
+            </label>
+            <label>
+              <input type="radio" name="mood" value="เฉยๆ"> เฉยๆ
+            </label>
+            <label>
+              <input type="radio" name="mood" value="ก็ดีนะ"> ก็ดีนะ
+            </label>
+            <label>
+              <input type="radio" name="mood" value="เศร้า"> เศร้า
+            </label>
+          </div>
+
+          <!-- ปุ่มส่ง -->
+          <a href="#" class="maincontent-btn" onclick="submitMood()">ส่งความรู้สึกของคุณตรงนี้!!</a>
+        </form>
+
+        <!-- ข้อความแสดงผล -->
+        <p id="response-message"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพิ่มกล่องข้อความ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบายความรู้สึกของคุณ</h1>
+        <form action="#" method="POST">
+            <label for="feelings">วันนี้คุณรู้สึกอย่างไร?</label>
+            <br>
+            <textarea id="feelings" name="feelings" rows="4" cols="50" placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+            <br><br>
+            <input type="submit" value="ส่งข้อความ">
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทความฮีลใจ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="healing-articles">
+    <div class="container">
+      <h1>บทความฮีลใจ</h1>
+
+      <!-- บทความที่ 1 -->
+      <article class="article">
+        <h2>จงให้เวลากับตัวเอง</h2>
+        <p>บางครั้งชีวิตอาจดูเหมือนวิ่งไปอย่างรวดเร็ว แต่การหยุดพักเพื่อดูแลตัวเองคือสิ่งสำคัญที่สุด คุณไม่จำเป็นต้องเร่งรีบในทุกเรื่อง ลองให้เวลากับตัวเองในการทำสิ่งที่คุณรัก หรือแค่พักผ่อนใจในที่สงบ.</p>
+      </article>
+
+      <!-- บทความที่ 2 -->
+      <article class="article">
+        <h2>คุณมีค่ามากกว่าที่คุณคิด</h2>
+        <p>บางครั้งเราอาจรู้สึกเหมือนไม่มีคุณค่า แต่คุณเป็นคนพิเศษในแบบของคุณเอง ทุกความพยายามของคุณมีความหมาย อย่าลืมชื่นชมตัวเองในสิ่งที่คุณได้ทำ.</p>
+      </article>
+
+      <!-- บทความที่ 3 -->
+      <article class="article">
+        <h2>ผ่านวันที่ยากลำบากไปด้วยกัน</h2>
+        <p>วันที่แย่อาจทำให้คุณรู้สึกหมดแรง แต่จงเชื่อว่าความรู้สึกนี้จะผ่านไป อย่าเก็บความเศร้าไว้คนเดียว ลองพูดคุยกับใครสักคนหรือเขียนระบายในสมุดเล่มโปรด.</p>
+      </article>
+
+      <!-- บทความที่ 4 -->
+      <article class="article">
+        <h2>จงเปิดใจรับความสุขเล็กๆ</h2>
+        <p>ไม่ว่าชีวิตจะยากแค่ไหน ลองมองหาสิ่งเล็กๆ ที่ทำให้คุณยิ้มได้ เช่น ดอกไม้บาน กาแฟร้อน หรือเสียงหัวเราะของเพื่อน การสังเกตสิ่งเล็กๆ จะช่วยเติมพลังใจได้อย่างไม่น่าเชื่อ.</p>
+      </article>
+
+      <!-- บทความที่ 5 -->
+      <article class="article">
+        <h2>ความล้มเหลวไม่ใช่จุดจบ</h2>
+        <p>ความล้มเหลวไม่ได้หมายความว่าคุณไม่ดีพอ แต่มันคือโอกาสที่จะเริ่มต้นใหม่อีกครั้งด้วยความแข็งแกร่ง จงเชื่อมั่นในตัวเองว่าคุณสามารถก้าวผ่านได้.</p>
+      </article>
+
+      <!-- บทความที่ 6 -->
+      <article class="article">
+        <h2>คุณไม่ได้อยู่คนเดียว</h2>
+        <p>ไม่ว่าคุณจะรู้สึกโดดเดี่ยวแค่ไหน ยังมีคนที่พร้อมรับฟังและอยู่ข้างคุณ อย่ากลัวที่จะขอความช่วยเหลือจากคนที่คุณไว้ใจ.</p>
+      </article>
+
+      <!-- บทความที่ 7 -->
+      <article class="article">
+        <h2>การพักผ่อนคือสิ่งสำคัญ</h2>
+        <p>การทำงานหนักเป็นสิ่งที่ดี แต่ร่างกายและจิตใจของคุณก็ต้องการการพักผ่อนเช่นกัน ลองหยุดพักเพื่อเติมพลังใจให้ตัวเองบ้าง.</p>
+      </article>
+
+      <!-- บทความที่ 8 -->
+      <article class="article">
+        <h2>ยิ้มเล็กๆ สร้างความเปลี่ยนแปลง</h2>
+        <p>แม้แต่รอยยิ้มเล็กๆ ก็สามารถสร้างความสุขให้ตัวเองและคนรอบข้างได้ ลองยิ้มให้ตัวเองในกระจก หรือคนที่เดินผ่าน.</p>
+      </article>
+
+      <!-- บทความที่ 9 -->
+      <article class="article">
+        <h2>ก้าวทีละก้าว</h2>
+        <p>คุณไม่จำเป็นต้องแก้ปัญหาทุกอย่างในวันเดียว ทำทีละก้าว มุ่งเน้นที่ความก้าวหน้าแทนความสมบูรณ์แบบ.</p>
+      </article>
+
+      <!-- บทความที่ 10 -->
+      <article class="article">
+        <h2>ธรรมชาติช่วยเยียวยา</h2>
+        <p>ลองออกไปเดินเล่นในสวน สูดอากาศบริสุทธิ์ หรือมองท้องฟ้าสักครู่ ธรรมชาติสามารถช่วยปลอบประโลมจิตใจได้.</p>
+      </article>
+
+      <!-- บทความที่ 11 -->
+      <article class="article">
+        <h2>ความพยายามคือชัยชนะ</h2>
+        <p>แค่คุณพยายามและไม่ยอมแพ้ นั่นคือชัยชนะของคุณแล้ว อย่าลืมให้กำลังใจตัวเองทุกครั้งที่คุณพยายาม.</p>
+      </article>
+
+      <!-- บทความที่ 12 -->
+      <article class="article">
+        <h2>ปล่อยวางในสิ่งที่ควบคุมไม่ได้</h2>
+        <p>สิ่งที่คุณควบคุมไม่ได้ ไม่ได้หมายความว่าคุณล้มเหลว แต่คือบทเรียนที่สอนให้คุณเติบโตและยอมรับความไม่สมบูรณ์ของชีวิต.</p>
+      </article>
+
+      <!-- บทความที่ 13 -->
+      <article class="article">
+        <h2>ใช้เวลาให้คนที่คุณรัก</h2>
+        <p>ความรักและความสัมพันธ์คือพลังบวกที่ช่วยเยียวยาใจ ลองใช้เวลาคุณภาพกับคนที่คุณรักเพื่อเติมเต็มพลังใจ.</p>
+      </article>
+
+      <!-- บทความที่ 14 -->
+      <article class="article">
+        <h2>ความสุขไม่ได้ซับซ้อน</h2>
+        <p>ความสุขอาจอยู่ในสิ่งที่เรียบง่าย เช่น การฟังเพลงที่ชอบ การอ่านหนังสือ หรือการนั่งเงียบๆ ในช่วงเวลาสงบ.</p>
+      </article>
+
+      <!-- บทความที่ 15 -->
+      <article class="article">
+        <h2>วันนี้คือโอกาสใหม่</h2>
+        <p>ทุกวันใหม่คือโอกาสที่คุณจะเริ่มต้นใหม่อีกครั้ง อย่ากังวลกับอดีต เพราะคุณสามารถสร้างความสุขในปัจจุบันได้.</p>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="healing-articles">
+    <div class="container">
+      <h1></h1>
+
+      <!-- บทความที่ 1 -->
+      <article class="article">
+        <h2>You're not just enough, you're extraordinary</h2>
+        <p>Stop thinking that you’re just average. You're extraordinary, and the world needs what you bring to the table. Don’t let anyone tell you otherwise.</p>
+        <p>หยุดคิดว่าคุณแค่พอเพียง คุณพิเศษ และโลกต้องการสิ่งที่คุณมี อย่าให้ใครมาบอกคุณว่าคุณไม่ดีพอ.</p>
+      </article>
+
+      <!-- บทความที่ 2 -->
+      <article class="article">
+        <h2>Failure? Nah, it’s just a lesson</h2>
+        <p>Don’t let failure make you feel small. Failure is just the universe’s way of teaching you how to get better. Rise up, and keep going.</p>
+        <p>อย่าให้ความล้มเหลวมาทำให้คุณรู้สึกเล็กน้อย ความล้มเหลวเป็นแค่บทเรียนที่จักรวาลส่งมาให้คุณได้เรียนรู้การเติบโต ลุกขึ้นแล้วเดินหน้าต่อไป.</p>
+      </article>
+
+      <!-- บทความที่ 3 -->
+      <article class="article">
+        <h2>Stop waiting for the perfect moment, make it happen now</h2>
+        <p>If you keep waiting for the "right" moment, you’ll never start. Stop waiting, and create the moment. You’re ready now.</p>
+        <p>ถ้าคุณยังรอคอยช่วงเวลาที่ "ดีที่สุด" คุณจะไม่มีวันเริ่มต้น หยุดรอ แล้วทำให้มันเกิดขึ้นตอนนี้ คุณพร้อมแล้ว.</p>
+      </article>
+
+      <!-- บทความที่ 4 -->
+      <article class="article">
+        <h2>Don’t settle for less than you deserve</h2>
+        <p>You deserve everything you desire. Don’t settle for less because you think it's all you can get. Demand what you deserve because you are worth it.</p>
+        <p>คุณสมควรได้ทุกสิ่งที่คุณต้องการ อย่าพอใจในสิ่งที่น้อยกว่าที่คุณสมควร เพราะคุณคู่ควรกับสิ่งที่ดีที่สุด.</p>
+      </article>
+
+      <!-- บทความที่ 5 -->
+      <article class="article">
+        <h2>Self-love is the best kind of love</h2>
+        <p>The moment you truly fall in love with yourself, you stop needing validation from others. You’ll become unstoppable.</p>
+        <p>เมื่อคุณเริ่มรักตัวเองอย่างแท้จริง คุณจะหยุดต้องการการยืนยันจากคนอื่น คุณจะกลายเป็นคนที่หยุดไม่ได้.</p>
+      </article>
+
+      <!-- บทความที่ 6 -->
+      <article class="article">
+        <h2>You’re a masterpiece, not a work in progress</h2>
+        <p>Don't think you need to change yourself to be loved. You’re already perfect as you are. Don’t let anyone make you feel like you’re not enough.</p>
+        <p>อย่าคิดว่าคุณต้องเปลี่ยนแปลงตัวเองเพื่อให้ได้รับความรัก คุณสมบูรณ์แบบแล้วในแบบที่คุณเป็น อย่าให้ใครทำให้คุณรู้สึกว่าคุณไม่ดีพอ.</p>
+      </article>
+
+      <!-- บทความที่ 7 -->
+      <article class="article">
+        <h2>Don’t compare your chapter 1 with someone’s chapter 20</h2>
+        <p>Everyone’s journey is different. Stop comparing your start with someone else's finish. You’re exactly where you need to be.</p>
+        <p>การเดินทางของแต่ละคนไม่เหมือนกัน หยุดเปรียบเทียบตอนเริ่มต้นของคุณกับตอนจบของคนอื่น คุณอยู่ในที่ที่คุณควรจะอยู่แล้ว.</p>
+      </article>
+
+      <!-- บทความที่ 8 -->
+      <article class="article">
+        <h2>Believe in your own magic</h2>
+        <p>Sometimes, you forget just how powerful you are. Trust your instincts and believe that you have the strength to overcome anything.</p>
+        <p>บางครั้งคุณลืมไปว่าคุณมีพลังมากแค่ไหน เชื่อในสัญชาตญาณของคุณ และเชื่อว่าคุณมีความแข็งแกร่งพอที่จะเอาชนะทุกอย่าง.</p>
+      </article>
+
+      <!-- บทความที่ 9 -->
+      <article class="article">
+        <h2>Own your worth</h2>
+        <p>You are worthy of everything you want in life. Own your worth, and never let anyone make you feel small or insignificant.</p>
+        <p>คุณคู่ควรกับทุกสิ่งที่คุณต้องการในชีวิต จงยอมรับคุณค่าของตัวเอง และอย่าให้ใครทำให้คุณรู้สึกตัวเล็กหรือไม่มีความหมาย.</p>
+      </article>
+
+      <!-- บทความที่ 10 -->
+      <article class="article">
+        <h2>Be your own biggest supporter</h2>
+        <p>No one can lift you up like you can. Be your own biggest cheerleader, and trust that you have everything inside you to achieve greatness.</p>
+        <p>ไม่มีใครสามารถยกคุณขึ้นได้เหมือนกับที่คุณทำเอง จงเป็นกำลังใจให้ตัวเอง และเชื่อว่าคุณมีทุกสิ่งที่จำเป็นเพื่อความยิ่งใหญ่ในตัวคุณ.</p>
+      </article>
+
+    </div>
+  </section>
+</body>
+</html>
+

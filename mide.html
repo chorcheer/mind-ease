@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mide Ease</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="emotion-container">
+    <h2>วันนี้คุณรู้สึกอย่างไร?</h2>
+    <div class="emotions">
+      <button class="emotion" data-feeling="happy">😊</button>
+      <button class="emotion" data-feeling="sad">😢</button>
+      <button class="emotion" data-feeling="angry">😡</button>
+      <button class="emotion" data-feeling="surprised">😮</button>
+    </div>
+    <p id="selected-emotion">เลือกหน้าความรู้สึก</p>
+
+    <!-- กล่องระบายความรู้สึก -->
+    <textarea id="feeling-box" placeholder="ระบายความรู้สึกของคุณที่นี่..."></textarea>
+    <button id="submit-feeling">ส่งความรู้สึก</button>
+
+    <p id="display-message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
